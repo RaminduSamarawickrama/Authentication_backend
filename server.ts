@@ -1,4 +1,4 @@
-import express, {NextFunction} from 'express';
+import express from 'express';
 import authRoutes, {authenticateToken} from "./routes/auth-routes";
 import dotenv from 'dotenv';
 
