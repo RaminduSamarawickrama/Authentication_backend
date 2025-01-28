@@ -1,4 +1,4 @@
-import express, {NextFunction} from "express";
+import express from "express";
 import {createUser, verifyUserCredentials} from "../database/user-client";
 import {User} from "../model/user";
 import jwt, {Secret} from 'jsonwebtoken';
