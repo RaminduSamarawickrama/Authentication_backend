@@ -9,8 +9,9 @@ dotenv.config();
 const router = express.Router();
 
 router.post("/login", async (req, res) => {
-    const username = req.body.username;
-    const password = req.body.password;
+    console.log('Login')
+    const username = req.body.user.username;
+    const password = req.body.user.password;
 
     const user : User = {username, password};
 
@@ -32,8 +33,9 @@ router.post("/login", async (req, res) => {
 })
 
 router.post("/register", async (req, res) => {
-    const username = req.body.username;
-    const password = req.body.password;
+    console.log('Register', req.body);
+    const username = req.body.user.username;
+    const password = req.body.user.password;
 
     const user : User = {username, password};
 
